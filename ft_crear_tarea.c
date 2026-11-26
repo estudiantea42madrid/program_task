@@ -1,6 +1,7 @@
 #include "task.h"
+#include "libft.h"
 
-t_task *ft_crear_tarea(int id, char *descripcion)
+t_task *ft_crear_tarea(char *descripcion, int id)
 {
     t_task  *nueva_tarea;
 

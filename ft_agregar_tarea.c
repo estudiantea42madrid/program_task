@@ -1,4 +1,5 @@
 #include "task.h"
+#include "libft.h"
 
 int	ft_agregar_tarea(t_list **lista, int id, char *descripcion)
 {

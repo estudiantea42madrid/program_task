@@ -5,6 +5,7 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <unistd.h>
+# include <stdio.h> //borrarr
 
 typedef struct s_list
 {
@@ -21,9 +22,11 @@ typedef struct s_task
 
 int		ft_agregar_tarea(t_list **lista, int id, char *descripcion);
 t_list	*ft_crear_nodo_tarea(int id, char *descripcion);
+t_task	*ft_buscar_tarea(t_list *lista, int id);
 t_task	*ft_crear_tarea(int id, char *descripcion);
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_back(t_list **lst, t_list *new);
-t_list	*ft_lstlast(t_list *lst);
+int		ft_completar_tarea(t_list *lista, int id);
+void	ft_mostrar_tareas(t_list *lista);
+int		ft_eliminar_tarea(t_list **lista, int id);
+int	main(int argc, char **argv);
 
 #endif
